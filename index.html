@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>醫師工作小面板</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="page-title">醫師工作小面板</h1>
+      <p id="today-date">今天日期：載入中...</p>
+    </header>
+
+    <main>
+      <section class="card-list">
+        <article class="card">
+          <h2>上午門診</h2>
+          <p>確認病歷、檢查值與追蹤計畫。</p>
+        </article>
+
+        <article class="card">
+          <h2>住院病人追蹤</h2>
+          <p>整理 progress note 與重要檢驗變化。</p>
+        </article>
+
+        <article class="card">
+          <h2>今日學習</h2>
+          <p>預留 20 分鐘學習 AI 或英文。</p>
+        </article>
+      </section>
+
+      <section class="actions">
+        <button id="complete-btn">完成今日檢查</button>
+        <button id="theme-btn">切換深色模式</button>
+      </section>
+
+      <p id="status-message" class="status-message">目前尚未完成今日檢查。</p>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

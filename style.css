@@ -1,0 +1,105 @@
+:root {
+  --bg: #f5f7fb;
+  --card-bg: #ffffff;
+  --text: #1f2937;
+  --subtext: #4b5563;
+  --border: #dbe3ee;
+  --button: #2563eb;
+  --button-text: #ffffff;
+}
+
+body.dark {
+  --bg: #111827;
+  --card-bg: #1f2937;
+  --text: #f9fafb;
+  --subtext: #d1d5db;
+  --border: #374151;
+  --button: #3b82f6;
+  --button-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Microsoft JhengHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.header p {
+  margin: 0;
+  color: var(--subtext);
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.card p {
+  margin-bottom: 0;
+  color: var(--subtext);
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  background: var(--button);
+  color: var(--button-text);
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+.status-message {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  color: var(--subtext);
+}
